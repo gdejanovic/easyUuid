@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>easyUuid test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script type="module" src="./easyUuid.js"></script>
+<body>
+    <button onclick="addCard()" class="button">Create new Id Card</button>
+    <div id="cardContainer"></div>
+    <script>
+        function addCard() {
+        const cardContainer = document.getElementById('cardContainer');
+        const cardId = EasyUuid.generate();
+  
+        const cardElement = document.createElement('div');
+        cardElement.className = 'card';
+        cardElement.id = cardId;
+        cardElement.textContent = 'Card ID: ' + cardId;
+  
+        cardContainer.appendChild(cardElement);
+      }
+    </script>
+</body>
+</html>
