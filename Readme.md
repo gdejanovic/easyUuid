@@ -4,7 +4,7 @@ easyUuid is a simple JavaScript library that provides a way to generate unique i
 
 ## Installation
 
-You can install easyUuid using npm: "TODO add method"
+No installation required just copy and paste the file into a src folder and import from there
 
 ## Usage
 
